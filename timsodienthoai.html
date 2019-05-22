@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sdt=["0923945934","0343546677","0732456673","0721341234"]
+    function timkiem(sdt) {
+        mau=/^[0]{1}[3|9]{1}[0-9]{8}$/;
+
+        let t=""
+        for (i=0 ; i<sdt.length ; i++){
+            if (mau.test(sdt[i])){
+               t+= sdt[i]+"  "
+            }
+        }
+        return t
+    }
+
+    console.log(timkiem(sdt))
+</script>
+</body>
+</html>
